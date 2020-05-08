@@ -11,12 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2020/5/2 4:03 下午
  */
 @SpringBootApplication
-public class TaskyServer {
+public class TaskenServer {
     @Autowired
     private static WSService wsService = new WSService();
 
     public static void main(String[] args) {
-        SpringApplication.run(TaskyServer.class, args);
+        SpringApplication.run(TaskenServer.class, args);
         wsService.init();
     }
 }
